@@ -12,6 +12,25 @@
     "graph": {
       "blocks": [
         {
+          "id": "bced34f6-0731-48d2-931a-14670241dfc6",
+          "type": "basic.output",
+          "data": {
+            "name": "",
+            "virtual": false,
+            "pins": [
+              {
+                "index": "0",
+                "name": "LED0",
+                "value": "45"
+              }
+            ]
+          },
+          "position": {
+            "x": 560,
+            "y": 200
+          }
+        },
+        {
           "id": "a6a8c44b-8c88-4590-b309-e7ec500e23f3",
           "type": "basic.output",
           "data": {
@@ -46,8 +65,8 @@
             "clock": false
           },
           "position": {
-            "x": 632,
-            "y": 272
+            "x": 624,
+            "y": 280
           }
         },
         {
@@ -59,15 +78,15 @@
             "pins": [
               {
                 "index": "0",
-                "name": "SW2",
-                "value": "33"
+                "name": "DD5",
+                "value": "119"
               }
             ],
             "clock": false
           },
           "position": {
-            "x": 448,
-            "y": 336
+            "x": 416,
+            "y": 328
           }
         },
         {
@@ -297,6 +316,16 @@
           "target": {
             "block": "2e7edad0-8759-4047-a77d-bbb9aab2a906",
             "port": "97b51945-d716-4b6c-9db9-970d08541249"
+          }
+        },
+        {
+          "source": {
+            "block": "79b6b0de-5c6e-4e5a-b92a-a850b536e01d",
+            "port": "out"
+          },
+          "target": {
+            "block": "bced34f6-0731-48d2-931a-14670241dfc6",
+            "port": "in"
           }
         }
       ]
